@@ -6,60 +6,94 @@
   </head>
   <body>
   <header>
-    <label for="search-todos">
-      <input type="text" id="search-todos" placeholder="What needs to be done?">
-    </label>
+    <h1>todos</h1>
    </header>
 
    <main>
-       <div class="retractable sheet">
-         <section>
-           <div class="todos1">
-             <label>
-               <input type="checkbox" id="place1" name="HTML"> HTML
-             </label>
-           </div>
-           <div class="todos2">
-             <label>
-               <input checked type="checkbox" id="place2" name="CSS" checked>CSS
-             </label>
-           </div>
-           <div class="todos3">
-             <label>
-               <input type="checkbox" id="place3" name="JS"> JS
-             </label>
-           </div>
-           <div class="todos4">
-             <label>
-               <input type="checkbox" id="place4" name="JS tools"> JS tools
-             </label>
-           </div>
-           </section>
-       </div>
+       <section class="content">
+        <div class="pull-out list">
+          <header class="pull-out list-header">
+            <label>
+              <input type="text" id="search-todos" placeholder="What needs to be done?">
+            </label>
+            <button class="button-name1">
+            </button>
+          </header>
+          <article class="pull-out-check-list">
+            <div class="section-list">
+              <label>
+                <input type="checkbox" name="HTML">
+                <span class="item">HTML</span>
+              </label>
+              <button class="button=name1"></button>
+              <div class="edit-list" hidden="hidden">
+                <input type="text" class="todo-input" value="HTML">
+              </div>
+            </div>
 
-      <footer class="footer">
-        <div class="footer-place">
-          <div class="number-of-works">
-            3 items left
-          </div>
-          <section class="buttons">
-            <button class="all-button">
-              All
-            </button>
-            <button class="active-button">
-              Active
-            </button>
-            <button class="completed-button">
-              Completed
-            </button>
-          </section>
-        <div class="bool-clean-button-footer">
-          <button class="button-clear">
-            Clear completed
-          </button>
+            <div class="pull-out-section2">
+              <label>
+                <input type="checkbox" name="todos2" checked>
+                <span class="item">CSS</span>
+              </label>
+              <button class="button=name2"></button>
+              <div class="edit-list" hidden="hidden">
+                <input type="text" class="todo-input" value="CSS">
+              </div>
+            </div>
+
+            <div class="pull-out-section3">
+              <label>
+                <input type="checkbox" class="todos3">
+                <span class="item">JS</span>
+              </label>
+              <button class="button=name3"></button>
+              <div class="edit-list" hidden="hidden">
+                <input type="text" class="todo-input" value="JS">
+              </div>
+            </div>
+
+            <div class="pull-out-section4">
+              <label>
+              <input type="checkbox" class="todos4">
+              <span class="item">JS tools</span>
+              </label>
+              <button class="button-name4"></button>
+              <div class="edit-list" hidden="hidden">
+                <input type="text" class="todo-input" value="JS tools"/>
+              </div>
+            </div>
+          </article>
         </div>
-      </div>
-    </footer>
+
+        <footer class="footer">
+              <div class="pull-out-list-footer-container">
+                3 items left
+              </div>
+            <section class="buttons">
+              <label>
+                <input type="radio" class="button-All" aria-label="Get all tasks" checked> All
+              </label>
+
+              <label>
+                <input type="radio" class="button-Active" aria-label="Check active tasks" checked> Active
+              </label>
+
+              <label>
+                <input type="radio" class="button-Completed" aria-label="Check completed tasks" checked> Completed
+              </label>
+            </section>
+          <div class="bool-clean-button-footer">
+            <button  aria-label="clear-current-tasks" class="button-clear">
+              Clear completed
+            </button>
+          </div>
+        </footer>
+
+
+       </section>
+
+
    </main>
   </body>
 </html>
