@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Doloman';
+  font-style: italic;
+  src: url("fontsFolder/Doloman.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Comfortaa';
+  src: url("fontsFolder/Comfortaa.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("fontsFolder/Montserrat.ttf") format("truetype");
+}
